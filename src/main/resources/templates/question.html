@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- (userInfo, myTaskList, manageTaskList, teamList, userList) -->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>問題</title>
+<link rel="stylesheet" href="/css/question.css" th:href="@{/css/question.css}" />
+<!-- css -->
+<link rel="stylesheet" th:href="@{/webjars/bootstrap/{version}/css/bootstrap.min.css(version=${@webJarsConfig.bootstrap})}" />
+<link rel="stylesheet" th:href="@{/webjars/font-awesome/{version}/css/all.css(version=${@webJarsConfig.fontawesome})}" />
+<!-- javascript -->
+<script th:src="@{/webjars/popper.js/{version}/umd/popper.min.js(version=${@webJarsConfig.popper})}"></script>
+<script th:src="@{/webjars/jquery/{version}/jquery.min.js(version=${@webJarsConfig.jquery})}"></script>
+<script th:src="@{/webjars/bootstrap/{version}/js/bootstrap.min.js(version=${@webJarsConfig.bootstrap})}"></script>
+<script th:src="@{/webjars/sockjs-client/{version}/sockjs.js(version=${@webJarsConfig.sockj})}"></script>
+<script th:src="@{/webjars/stomp-websocket/{version}/stomp.js(version=${@webJarsConfig.stomp})}"></script>
+<script th:src="@{/script/question.js}" src="/script/question.js"></script>
+</head>
+<body>
+  <!-- コンテンツ -->
+  <div class="result"></div>
+  <div class="switch-contener d-flex align-items-center">
+    <div class="switch">
+      <a><span>＼ Check In ／</span></a>
+    </div>
+  </div>
+</body>
+</html>

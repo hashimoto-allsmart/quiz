@@ -1,0 +1,29 @@
+# ===============================
+# Spring 設定
+# ===============================
+spring:
+# Database
+  datasource:
+    url: jdbc:postgresql://localhost:5432/task-mng
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+    platform: postgresql
+
+# ===============================
+# Mybatis 設定
+# ===============================
+mybatis:
+ configuration:
+  map-underscore-to-camel-case: true
+
+# ===============================
+# 外部ライブラリバージョン管理
+# ===============================
+webjars:
+  bootstrap: "4.3.1"
+  jquery: "3.4.1"
+  popper: "1.15.0"
+  fontawesome: "5.10.1"
+  sockj: "1.1.2"
+  stomp: "2.3.3-1"
